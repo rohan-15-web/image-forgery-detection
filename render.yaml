@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: image-forgery-detection
+    runtime: python
+    buildCommand: bash build_render.sh
+    startCommand: gunicorn app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.12
+      - key: NODE_VERSION
+        value: 18.17.0
+      - key: JWT_SECRET_KEY
+        value: jwt-secret-key-forgery-2024
+      - key: SECRET_KEY
+        value: image-forgery-super-secret-key-2024

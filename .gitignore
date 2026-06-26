@@ -1,0 +1,12 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+instance/
+frontend/node_modules/
+frontend/dist/
+.env
+static/uploads/*
+static/heatmaps/*
+!static/uploads/.gitkeep
+!static/heatmaps/.gitkeep
